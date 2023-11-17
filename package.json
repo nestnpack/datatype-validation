@@ -1,5 +1,5 @@
 {
-  "name": "datatype-validator",
+  "name": "datatype-validation",
   "version": "1.0.0",
   "description": "check data types such as string, number and boolean in JavaScript",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/haidarahmadfaiq/datatype-validator.git"
+    "url": "git+https://github.com/haidarahmadfaiq/datatype-validation.git"
   },
   "keywords": [
-    "validator"
+    "validation"
   ],
   "author": "Haidar Ahmad Faiq",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/haidarahmadfaiq/datatype-validator/issues"
+    "url": "https://github.com/haidarahmadfaiq/datatype-validation/issues"
   },
-  "homepage": "https://github.com/haidarahmadfaiq/datatype-validator#readme"
+  "homepage": "https://github.com/haidarahmadfaiq/datatype-validation#readme"
 }
