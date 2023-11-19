@@ -21,7 +21,7 @@ const datatype = (function() {
       return parseInt(value, 10);
     },
     toFloat: (value) => {
-      return parseFloat(value);
+      return parseFloat(value).toFixed(1);
     }
   };
 
@@ -55,25 +55,30 @@ const datatype = (function() {
   };
 
   const datatype = {
-    // String
-    isString: string.isString,
-    toString: string.toString,
-  
-    // Number
-    isInt: number.isInt,
-    isFloat: number.isFloat,
-    toInt: number.toInt,
-    toFloat: number.toFloat,
-  
-    // Boolean
-    isBoolean: boolean.isBoolean,
-    isBoolTrue: boolean.isBoolTrue,
-    isBoolFalse: boolean.isBoolFalse,
-  
-    // Datetime
-    isDate: datetime.isDate,
-    isTime: datetime.isTime,
-    isDateTime: datetime.isDateTime,
+    //IS
+      // String
+      isString: string.isString,
+      toString: string.toString,
+    
+      // Number
+      isInt: number.isInt,
+      isFloat: number.isFloat,
+      toInt: number.toInt,
+      toFloat: number.toFloat,
+    
+      // Boolean
+      isBoolean: boolean.isBoolean,
+      isBoolTrue: boolean.isBoolTrue,
+      isBoolFalse: boolean.isBoolFalse,
+    
+      // Datetime
+      isDate: datetime.isDate,
+      isTime: datetime.isTime,
+      isDateTime: datetime.isDateTime,
+    //TO
+      toString: string.toString,
+      toInt: number.toInt,
+      toFloat: number.toFloat
   };
   
   return datatype;
