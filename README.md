@@ -1,7 +1,7 @@
 
-# datatype-validation
+# Datatype Validation
 
-An npm utility package to make it easier to check data types such as string, number and boolean in JavaScript
+An npm utility package to make it easier to check data types such as string, number, boolean and more in JavaScript
 
 ## Installation
 To use this package, you can install it via npm
@@ -12,18 +12,21 @@ npm install datatype-validation
 
 After it has been installed, then import it, there are various import methods according to what you use
 
-#### Nodejs
+#### With Require
 ```javascript
 const datatype = require("datatype-validation");
 ```
 
-#### Javascript
+#### With Tag Script
 ```html
 <script type="text/javascript" src="./node_modules/datatype-validation/build/datatype.js"></script>
 ```
 
 ## Usage
 To use existing functions, use datatype.functionName(value), here is an example of its use:
+
+
+### Check data type
 
 #### String
 ```javascript
@@ -51,7 +54,7 @@ datatype.isFloat(123); //This will return false, because the value entered is no
 datatype.isBoolean(false); //This will return true, because the value entered is a boolean, not a string or number
 
 
-datatype.isBoolTrue(true); //This will return true, because the value entered is a boolean that contains true not false
+datatype.isBoolTrue(true); //This will return true, because the value entered is a boolean that contains the value true not false
 
 
 datatype.isBoolFalse(true); //This will return false, because the value entered is a boolean that contains the value true, not false
@@ -95,6 +98,19 @@ datatype.isDateTime("18/11/2023 10-58-35");
 datatype.isDateTime("18:11:2023 11-14-06");
 ```
 
+
+### Change data type
+#### String
+```javascript
+datatype.toString(1234); //This will return a value in the form of string "1234"
+```
+
+#### Number
+```javascript
+datatype.toInt("12.5"); //This will convert the string float value to int (12)
+
+datatype.toFloat(25); //This will convert the value int (25) to float (25.0)
+```
 ## Features
 | Function               | Description                                      |
 | :--------------------- | :----------------------------------------------- |
@@ -107,3 +123,6 @@ datatype.isDateTime("18:11:2023 11-14-06");
 | `isDate(value)`        | to check whether the value entered is dd-mm-yyyy or not |
 | `isTime(value)`        | to check whether the value entered is hh-mm-ss or not |
 | `isDateTime(value)`    | to check whether the value entered is dd-mm-yyyy hh-mm-ss or not |
+| `toString(value)`      | converts the input value into a string |
+| `toInt(value)`         | converts the input value into a int |
+| `toFloat(value)`       | converts the input value into a float |
