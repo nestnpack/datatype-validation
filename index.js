@@ -1,7 +1,8 @@
 /*
- * MIT License
- * Copyright (c) 2023 Haidar Ahmad Faiq
- * --- datatype-validation --- *
+MIT License
+Copyright (c) 2023 Nest Packages
+
+ ---------- Datatype Validation ---------- 
 */
 
 const string = require('./lib/string.js');

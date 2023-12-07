@@ -1,3 +1,10 @@
+/*
+MIT License
+Copyright (c) 2023 Nest Packages
+
+ ---------- Datatype Validation ---------- 
+*/
+
 const datatype = (function() {
   // Modul string
   const string = {
