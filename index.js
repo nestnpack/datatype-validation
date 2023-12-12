@@ -9,6 +9,7 @@ const string = require('./lib/string.js');
 const number = require('./lib/number.js');
 const boolean = require('./lib/boolean.js');
 const datetime = require('./lib/datetime.js');
+const web = require('./lib/web.js');
 
 module.exports = {
   //IS
@@ -31,8 +32,10 @@ module.exports = {
     isDate: datetime.isDate,
     isTime: datetime.isTime,
     isDateTime: datetime.isDateTime,
+    // Web
+    isDomain: web.isDomain,
   //TO
     toString: string.toString,
     toInt: number.toInt,
-    toFloat: number.toFloat.
+    toFloat: number.toFloat,
 };
