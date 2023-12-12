@@ -4,22 +4,31 @@
 An npm utility package to make it easier to check data types such as string, number, boolean and more in JavaScript
 
 ## Installation
-To use this package, you can install it via npm
 
+To use this package, you can install it via npm
 ```console
 npm install datatype-validation
 ```
 
-After it has been installed, then import it, there are various import methods according to what you use
+or connect with CDN
+```text
+https://www.unpkg.com/datatype-validation@latest/datatype.js
+```
+
+After installing, do the import
 
 #### With Require
 ```javascript
-const datatype = require("datatype-validation");
+const datatype = require('datatype-validation');
 ```
 
 #### With Tag Script
 ```html
-<script type="text/javascript" src="./node_modules/datatype-validation/build/datatype.js"></script>
+<script type="text/javascript" src="./node_modules/datatype-validation/datatype.js"></script>
+
+<!-- connect with CDN -->
+
+<script type="text/javascript" src="https://www.unpkg.com/datatype-validation@latest/datatype.js"></script>
 ```
 
 ## Usage
@@ -98,6 +107,20 @@ datatype.isDateTime("18/11/2023 10-58-35");
 datatype.isDateTime("18:11:2023 11-14-06");
 ```
 
+#### Web
+```javascript
+datatype.isDomain('example.com'); //This will return true, because the value entered is valid domain
+
+datatype.isDomain('https://lol.net'); //This also result the value true
+
+datatype.isDomain('http://lol.xyz'); //This also result the value true
+
+datatype.isDomain('https://blog.lol.com'); //This also result the value true
+
+datatype.isDomain('https://blog.lol.i'); //This will return false, because the domain extension is invalid
+
+```
+
 
 ### Change data type
 #### String
@@ -123,6 +146,7 @@ datatype.toFloat(25); //This will convert the value int (25) to float (25.0)
 | `isDate(value)`        | to check whether the value entered is dd-mm-yyyy or not |
 | `isTime(value)`        | to check whether the value entered is hh-mm-ss or not |
 | `isDateTime(value)`    | to check whether the value entered is dd-mm-yyyy hh-mm-ss or not |
+| `isDomain(value)`    | to check whether the value entered is valid domain or not |
 | `toString(value)`      | converts the input value into a string |
 | `toInt(value)`         | converts the input value into a int |
 | `toFloat(value)`       | converts the input value into a float |
