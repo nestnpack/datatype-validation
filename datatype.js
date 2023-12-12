@@ -19,7 +19,7 @@ const datatype = (function() {
         throw Error('Enter the value of the function toString');
       }
       return String(value);
-    }
+    },
   };
 
   // Modul number
@@ -47,7 +47,7 @@ const datatype = (function() {
         throw Error('Enter the value of the function toFloat');
       }
       return parseFloat(value).toFixed(1);
-    }
+    },
   };
 
   // Modul boolean
@@ -69,7 +69,7 @@ const datatype = (function() {
         throw Error('Enter the value of the function isBoolFalse');
       }
       return isBoolean(value) && value === false;
-    }
+    },
   };
 
   // Modul datetime
@@ -94,9 +94,21 @@ const datatype = (function() {
       }
       const dateTimeFormatRegex = /^\d{2}\D\d{2}\D\d{4} \d{2}\D\d{2}\D\d{2}$/;
       return dateTimeFormatRegex.test(value);
-    }
+    },
   };
-
+  
+  const web = {
+    isDomain: (value) => {
+      if(value === undefined) {
+        throw Error('Enter the value of the function isDomain');
+      }
+      
+      const domainRegex = /^(?:(?:https?:\/\/)?(?:www\.)?)?([a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*\.[a-zA-Z]{2,})$/;
+      
+      return domainRegex.test(value);
+    },
+  };
+  
   const datatype = {
     //IS
       // String
@@ -118,10 +130,12 @@ const datatype = (function() {
       isDate: datetime.isDate,
       isTime: datetime.isTime,
       isDateTime: datetime.isDateTime,
+      // Web
+      isDomain: web.isDomain,
     //TO
       toString: string.toString,
       toInt: number.toInt,
-      toFloat: number.toFloat
+      toFloat: number.toFloat,
   };
   
   return datatype;
