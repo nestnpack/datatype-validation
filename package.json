@@ -1,6 +1,6 @@
 {
   "name": "datatype-validation",
-  "version": "1.1.1",
+  "version": "1.2.2",
   "description": "check the data type or change the data type",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/haidarahmadfaiq/datatype-validation.git"
+    "url": "git+https://github.com/nestpackages/datatype-validation.git"
   },
   "keywords": [
     "validation",
@@ -18,6 +18,7 @@
     "string",
     "number",
     "boolean",
+    "domain",
     "type-checking",
     "type",
     "check"
@@ -25,7 +26,7 @@
   "author": "Haidar Ahmad Faiq",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/haidarahmadfaiq/datatype-validation/issues"
+    "url": "https://github.com/nestpackages/datatype-validation/issues"
   },
-  "homepage": "https://github.com/haidarahmadfaiq/datatype-validation#readme"
+  "homepage": "https://github.com/nestpackages/datatype-validation#readme"
 }
