@@ -2,7 +2,7 @@
 MIT License
 Copyright (c) 2024 Nest Packages
 
- ---------- Datatype Validation ---------- 
+ ---------- Datatype Validation V1.2.4 ---------- 
 */
 
 const string = require('./lib/string.js');
