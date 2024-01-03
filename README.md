@@ -5,7 +5,7 @@ An npm utility package to make it easier to check data types such as string, num
 
 ## Installation
 
-To use this package, you can install it via npm
+Install with npm
 ```console
 npm install datatype-validation
 ```
