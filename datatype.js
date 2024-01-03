@@ -2,20 +2,20 @@
 MIT License
 Copyright (c) 2024 Nest Packages
 
- ---------- Datatype Validation ---------- 
+ ---------- Datatype Validation V1.2.4 ---------- 
 */
 
 const datatype = (function() {
   // Modul string
   const string = {
     isString: (value) => {
-      if(value === undefined) {
+      if(typeof value === 'undefined') {
         throw Error('Enter the value of the function isString');
       }
       return typeof value === 'string' && value.trim() !== '';
     },
     toString: (value) => {
-      if(value === undefined) {
+      if(typeof value === 'undefined') {
         throw Error('Enter the value of the function toString');
       }
       return String(value);
@@ -25,25 +25,25 @@ const datatype = (function() {
   // Modul number
   const number = {
     isInt: (value) => {
-      if(value === undefined) {
+      if(typeof value === 'undefined') {
         throw Error('Enter the value of the function isInt');
       }
       return typeof value === 'number' && Number.isInteger(value);
     },
     isFloat: (value) => {
-      if(value === undefined) {
+      if(typeof value === 'undefined') {
         throw Error('Enter the value of the function isFloat');
       }
       return typeof value === 'number' && !Number.isInteger(value);
     },
     toInt: (value) =>  {
-      if(value === undefined) {
+      if(typeof value === 'undefined') {
         throw Error('Enter the value of the function toInt');
       }
       return parseInt(value, 10);
     },
     toFloat: (value) => {
-      if(value === undefined) {
+      if(typeof value === 'undefined') {
         throw Error('Enter the value of the function toFloat');
       }
       return parseFloat(value).toFixed(1);
@@ -53,19 +53,19 @@ const datatype = (function() {
   // Modul boolean
   const boolean = {
     isBoolean: (value) => {
-      if(value === undefined) {
+      if(typeof value === 'undefined') {
         throw Error('Enter the value of the function isBoolean');
       }
       return typeof value === 'boolean';
     },
     isBoolTrue: (value) => {
-      if(value === undefined) {
+      if(typeof value === 'undefined') {
         throw Error('Enter the value of the function isBoolTrue');
       }
       return isBoolean(value) && value === true;
     },
     isBoolFalse: (value) => {
-      if(value === undefined) {
+      if(typeof value === 'undefined') {
         throw Error('Enter the value of the function isBoolFalse');
       }
       return isBoolean(value) && value === false;
@@ -75,21 +75,21 @@ const datatype = (function() {
   // Modul datetime
   const datetime = {
     isDate: (value) => {
-      if(value === undefined) {
+      if(typeof value === 'undefined') {
         throw Error('Enter the value of the function isDate');
       }
       const dateFormatRegex = /^\d{2}\D\d{2}\D\d{4}$/;
       return dateFormatRegex.test(value);
     },
     isTime: (value) => {
-      if(value === undefined) {
+      if(typeof value === 'undefined') {
         throw Error('Enter the value of the function isTime');
       }
       const timeFormatRegex = /^\d{2}\D\d{2}\D\d{2}$/;
       return timeFormatRegex.test(value);
     },
     isDateTime: (value) => {
-      if(value === undefined) {
+      if(typeof value === 'undefined') {
         throw Error('Enter the value of the function isDateTime');
       }
       const dateTimeFormatRegex = /^\d{2}\D\d{2}\D\d{4} \d{2}\D\d{2}\D\d{2}$/;
@@ -97,9 +97,10 @@ const datatype = (function() {
     },
   };
   
+  // Modul web
   const web = {
     isDomain: (value) => {
-      if(value === undefined) {
+      if(typeof value === 'undefined') {
         throw Error('Enter the value of the function isDomain');
       }
       
