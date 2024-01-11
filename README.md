@@ -20,7 +20,7 @@ With Require
 const datatype = require('datatype-validation');
 ```
 
-With Tag Script
+With Tag Script Html
 ```html
 <script src="./node_modules/datatype-validation/datatype.js" type="text/javascript"></script>
 ```
@@ -133,7 +133,7 @@ datatype.toInt("12.5"); //This will convert the string float value to int (12)
 
 datatype.toFloat(25); //This will convert the value int (25) to float (25.0)
 ```
-## Features
+## List
 | Function               | Description                                      |
 | :--------------------- | :----------------------------------------------- |
 | `isString(value)`      | to check whether the value entered is a string or not |
