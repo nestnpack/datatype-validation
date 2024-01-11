@@ -1,4 +1,3 @@
-
 # Datatype Validation
 
 An npm utility package to make it easier to check data types such as string, number, boolean and more in JavaScript
