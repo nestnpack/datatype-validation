@@ -4,7 +4,6 @@
 An npm utility package to make it easier to check data types such as string, number, boolean and more in JavaScript
 
 ## Installation
-
 Install with npm
 ```console
 npm install datatype-validation
@@ -15,20 +14,20 @@ or connect with CDN
 https://www.unpkg.com/datatype-validation@latest/datatype.js
 ```
 
-After installing, do the import
-
-#### With Require
+## Import
+With Require
 ```javascript
 const datatype = require('datatype-validation');
 ```
 
-#### With Tag Script
+With Tag Script
 ```html
-<script type="text/javascript" src="./node_modules/datatype-validation/datatype.js"></script>
+<script src="./node_modules/datatype-validation/datatype.js" type="text/javascript"></script>
+```
 
-<!-- connect with CDN -->
-
-<script type="text/javascript" src="https://www.unpkg.com/datatype-validation@latest/datatype.js"></script>
+Connect with CDN
+```html
+<script src="https://www.unpkg.com/datatype-validation@latest/datatype.js" type="text/javascript"></script>
 ```
 
 ## Usage
