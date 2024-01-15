@@ -2,8 +2,10 @@
 MIT License
 Copyright (c) 2024 Nest Packages
 
- ---------- Datatype Validation V1.2.4 ---------- 
+ ---------- Datatype Validation V1.2.5 ---------- 
 */
+
+'use strict';
 
 const datatype = (function() {
   // Modul string
