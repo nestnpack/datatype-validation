@@ -19,11 +19,6 @@ With Require
 const datatype = require('datatype-validation');
 ```
 
-With Tag Script Html
-```html
-<script src="./node_modules/datatype-validation/datatype.js" type="text/javascript"></script>
-```
-
 Connect with CDN
 ```html
 <script src="https://www.unpkg.com/datatype-validation@latest/datatype.js" type="text/javascript"></script>
