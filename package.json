@@ -1,6 +1,6 @@
 {
   "name": "datatype-validation",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "check the data type or change the data type",
   "main": "index.js",
   "scripts": {
