@@ -1,9 +1,10 @@
-/*
-MIT License
-Copyright (c) 2024 Nest Packages
+/*!
+---------- Datatype Validation V1.2.6 ---------- 
+ * MIT License
+ * Copyright (c) 2023 - 2024 Nest Packages
+ */
 
- ---------- Datatype Validation V1.2.5 ---------- 
-*/
+'use strict';
 
 const string = require('./lib/string.js');
 const number = require('./lib/number.js');
