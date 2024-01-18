@@ -1,11 +1,14 @@
-/*
-MIT License
-Copyright (c) 2024 Nest Packages
-
- ---------- Datatype Validation V1.2.5 ---------- 
-*/
+/*!
+---------- Datatype Validation V1.2.7 ---------- 
+ * MIT License
+ * Copyright (c) 2023 - 2024 Nest NPack
+ */
 
 'use strict';
+
+/**
+ * Module function datatype
+ */
 
 const datatype = (function() {
   // Modul string
