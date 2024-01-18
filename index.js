@@ -1,16 +1,25 @@
 /*!
----------- Datatype Validation V1.2.6 ---------- 
+---------- Datatype Validation V1.2.7 ---------- 
  * MIT License
- * Copyright (c) 2023 - 2024 Nest Packages
+ * Copyright (c) 2023 - 2024 Nest NPack
  */
 
 'use strict';
+
+/**
+ * Require library modules
+ */
 
 const string = require('./lib/string.js');
 const number = require('./lib/number.js');
 const boolean = require('./lib/boolean.js');
 const datetime = require('./lib/datetime.js');
 const web = require('./lib/web.js');
+
+
+/**
+ * Export library modules
+ */
 
 module.exports = {
   //IS
