@@ -6,10 +6,6 @@
 
 'use strict';
 
-/**
- * Module function datatype
- */
-
 const datatype = (function() {
   // Modul string
   const string = {
