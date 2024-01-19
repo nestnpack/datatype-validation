@@ -6,20 +6,11 @@
 
 'use strict';
 
-/**
- * Require library modules
- */
-
 const string = require('./lib/string.js');
 const number = require('./lib/number.js');
 const boolean = require('./lib/boolean.js');
 const datetime = require('./lib/datetime.js');
 const web = require('./lib/web.js');
-
-
-/**
- * Export library modules
- */
 
 module.exports = {
   //IS
