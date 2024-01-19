@@ -7,7 +7,7 @@
 'use strict';
 
 const datatype = (function() {
-  // Modul string
+  //Module string
   const string = {
     isString: (value) => {
       if(typeof value === 'undefined') {
@@ -23,7 +23,7 @@ const datatype = (function() {
     },
   };
 
-  // Modul number
+  //Module number
   const number = {
     isInt: (value) => {
       if(typeof value === 'undefined') {
@@ -51,7 +51,7 @@ const datatype = (function() {
     },
   };
 
-  // Modul boolean
+  //Module boolean
   const boolean = {
     isBoolean: (value) => {
       if(typeof value === 'undefined') {
@@ -73,7 +73,7 @@ const datatype = (function() {
     },
   };
 
-  // Modul datetime
+  //Module datetime
   const datetime = {
     isDate: (value) => {
       if(typeof value === 'undefined') {
@@ -98,7 +98,7 @@ const datatype = (function() {
     },
   };
   
-  // Modul web
+  //Modul web
   const web = {
     isDomain: (value) => {
       if(typeof value === 'undefined') {
