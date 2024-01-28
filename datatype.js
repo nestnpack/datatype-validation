@@ -1,5 +1,5 @@
 /*!
----------- Datatype Validation V1.2.7 ---------- 
+---------- Datatype Validation V1.8.6 ---------- 
  * MIT License
  * Copyright (c) 2023 - 2024 Nest NPack
  */
@@ -71,6 +71,12 @@ const datatype = (function() {
       }
       return isBoolean(value) && value === false;
     },
+    toBoolean: (value) => {
+      if(typeof value === 'undefined') {
+        return Error('Enter the value of the function toBoolean');
+      }
+      return value < 1 ? false : true;
+    },
   };
 
   //Module datetime
@@ -98,8 +104,8 @@ const datatype = (function() {
     },
   };
   
-  //Modul web
-  const web = {
+  //Module server
+  const server = {
     isDomain: (value) => {
       if(typeof value === 'undefined') {
         throw Error('Enter the value of the function isDomain');
@@ -132,12 +138,13 @@ const datatype = (function() {
       isDate: datetime.isDate,
       isTime: datetime.isTime,
       isDateTime: datetime.isDateTime,
-      // Web
-      isDomain: web.isDomain,
+      // Server
+      isDomain: server.isDomain,
     //TO
       toString: string.toString,
       toInt: number.toInt,
       toFloat: number.toFloat,
+      toBoolean: boolean.toBoolean,
   };
   
   return datatype;
