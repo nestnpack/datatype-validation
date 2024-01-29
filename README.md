@@ -127,6 +127,17 @@ datatype.toInt("12.5"); //This will convert the string float value to int (12)
 
 datatype.toFloat(25); //This will convert the value int (25) to float (25.0)
 ```
+
+##### Boolean
+```javascript
+datatype.toBoolean("lol"); //This will convert or return boolean value true
+
+datatype.toBoolean(""); //This will convert or return boolean value false
+
+datatype.toBoolean(1); //This will convert or return boolean value true, if value number > 0
+
+datatype.toBoolean(0); //This will convert or return boolean value false, if value number < 0
+```
 ## List
 | Function               | Description                                      |
 | :--------------------- | :----------------------------------------------- |
@@ -143,3 +154,4 @@ datatype.toFloat(25); //This will convert the value int (25) to float (25.0)
 | `toString(value)`      | converts the input value into a string |
 | `toInt(value)`         | converts the input value into a int |
 | `toFloat(value)`       | converts the input value into a float |
+| `toBoolean(value)`       | converts the input value into a boolean value |
