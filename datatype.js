@@ -104,8 +104,8 @@ const datatype = (function() {
     },
   };
   
-  //Module server
-  const server = {
+  //Module other
+  const other = {
     isDomain: (value) => {
       if(typeof value === 'undefined') {
         throw Error('Enter the value of the function isDomain');
@@ -139,7 +139,8 @@ const datatype = (function() {
       isTime: datetime.isTime,
       isDateTime: datetime.isDateTime,
       // Server
-      isDomain: server.isDomain,
+      isDomain: other.isDomain,
+      isIPAddress: other.isIPAddress,
     //TO
       toString: string.toString,
       toInt: number.toInt,
