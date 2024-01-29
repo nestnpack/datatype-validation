@@ -10,7 +10,7 @@ const string = require('./lib/string.js');
 const number = require('./lib/number.js');
 const boolean = require('./lib/boolean.js');
 const datetime = require('./lib/datetime.js');
-const server = require('./lib/server.js');
+const other = require('./lib/other.js');
 
 module.exports = {
   //IS
@@ -34,8 +34,8 @@ module.exports = {
     isTime: datetime.isTime,
     isDateTime: datetime.isDateTime,
     // Server
-    isDomain: server.isDomain,
-    isIPAddress: server.isIPAddress,
+    isDomain: other.isDomain,
+    isIPAddress: other.isIPAddress,
   //TO
     toString: string.toString,
     toInt: number.toInt,
