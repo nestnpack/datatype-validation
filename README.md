@@ -100,7 +100,7 @@ datatype.isDateTime("18/11/2023 10-58-35");
 datatype.isDateTime("18:11:2023 11-14-06");
 ```
 
-#### Web
+#### Other
 ```javascript
 datatype.isDomain('example.com'); //This will return true, because the value entered is valid domain
 
