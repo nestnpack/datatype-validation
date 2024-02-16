@@ -33,7 +33,8 @@ module.exports = {
     isDate: datetime.isDate,
     isTime: datetime.isTime,
     isDateTime: datetime.isDateTime,
-    // Server
+    
+    // Other
     isDomain: other.isDomain,
     isIPAddress: other.isIPAddress,
   //TO
