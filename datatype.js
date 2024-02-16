@@ -115,6 +115,15 @@ const datatype = (function() {
       
       return domainRegex.test(value);
     },
+    isIPAddress: (value) => {
+      if(typeof value === 'undefined') {
+        return Error('Enter the value of the function isIPAddress');
+      }
+      
+      const ipRegex = /^(\d{1,3}\.){3}\d{1,3}$/;
+      
+      return ipRegex.test(value);
+    }
   };
   
   const datatype = {
@@ -138,7 +147,8 @@ const datatype = (function() {
       isDate: datetime.isDate,
       isTime: datetime.isTime,
       isDateTime: datetime.isDateTime,
-      // Server
+      
+      // Other
       isDomain: other.isDomain,
       isIPAddress: other.isIPAddress,
     //TO
