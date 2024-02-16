@@ -112,6 +112,10 @@ datatype.isDomain('https://blog.lol.com'); //This also result the value true
 
 datatype.isDomain('https://blog.lol.i'); //This will return false, because the domain extension is invalid
 
+
+datatype.isIPAddress('192.168.1.1'); //This will return true
+
+datatype.isIPAddress(192.168.1.1); //This will return false, because javascript thinks this is a mathematical operation
 ```
 
 
@@ -151,6 +155,7 @@ datatype.toBoolean(0); //This will convert or return boolean value false, if val
 | `isTime(value)`        | to check whether the value entered is hh-mm-ss or not |
 | `isDateTime(value)`    | to check whether the value entered is dd-mm-yyyy hh-mm-ss or not |
 | `isDomain(value)`    | to check whether the value entered is valid domain or not |
+| `isIPAddress(value)`    | to check whether the value entered is valid ipaddress or not |
 | `toString(value)`      | converts the input value into a string |
 | `toInt(value)`         | converts the input value into a int |
 | `toFloat(value)`       | converts the input value into a float |
