@@ -1,5 +1,5 @@
 /*!
----------- Datatype Validation V1.2.7 ---------- 
+---------- Datatype Validation V1.8.6 ---------- 
  * MIT License
  * Copyright (c) 2023 - 2024 Nest NPack
  */
@@ -35,6 +35,7 @@ module.exports = {
     isDateTime: datetime.isDateTime,
     // Server
     isDomain: server.isDomain,
+    isIPAddress: server.isIPAddress,
   //TO
     toString: string.toString,
     toInt: number.toInt,
