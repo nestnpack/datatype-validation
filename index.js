@@ -1,5 +1,5 @@
 /*!
----------- Datatype Validation V1.8.6 ---------- 
+---------- Datatype Validation V1.3.6 ---------- 
  * MIT License
  * Copyright (c) 2023 - 2024 Nest NPack
  */
